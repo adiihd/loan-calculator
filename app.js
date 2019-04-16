@@ -5,7 +5,7 @@ document.querySelector('#loan-form').addEventListener('submit', function(e) {
   // Show loader
   document.getElementById('loading').style.display = 'block';
 
-  setTimeout(calculateResults, 1500);
+  setTimeout(calculateResults, 500);
 
   e.preventDefault();
 });
