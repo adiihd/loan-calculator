@@ -11,6 +11,13 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <title>Loan Calculator</title>
+
+    <style>
+        #loading,
+        #results {
+            display: none;
+        }
+    </style>
 </head>
 
 <body class="bg-dark">
@@ -22,7 +29,7 @@
                     <form id="loan-form">
                         <div class="form-group">
                             <div class="input-group-prepend">
-                                <span class="input-group-text">$</span>
+                                <span class="input-group-text">£</span>
                                 <input type="number" class="form-control" id="amount" placeholder="Loan Amount">
                             </div>
                         </div>
@@ -40,11 +47,11 @@
                         </div>
                     </form>
                     <!-- LOADER -->
-                    <!-- <div id="loading">
+                    <div id="loading">
                         <img src="img/loading.gif" alt="">
-                    </div> -->
+                    </div>
                     <!-- RESULTS -->
-                    <div class="results" class="pt-4">
+                    <div id="results" class="pt-4">
                         <h5>Results</h5>
                         <div class="form-group">
                             <div class="input-group-prepend">
